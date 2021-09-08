@@ -64,6 +64,8 @@ function gmain(){
   git branch -m master main
   git fetch origin
   git branch -u origin/main main
+  git commit -a -m "renamed master to main"
+  git push origin HEAD:master
 }
 
 # Helper function to list all PRs for a repo using gh cli, but list additions, deletions and files changed
